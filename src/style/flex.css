@@ -1,0 +1,12 @@
+/**
+ * Created by WebStorm.
+ * User: 高俊东
+ * Date: 2/23/21
+ * Time: 3:55 PM
+ */
+.flex{display: flex;}
+.flex-aic{display: flex; align-items: center;}
+.flex-jac{display: flex; align-items: center; justify-content: center;}
+.flex-jasc{display: flex; align-items: center; justify-content: space-between;}
+.flex-grow{flex-grow: 1;}
+.flex-wrap{flex-wrap: wrap;}
