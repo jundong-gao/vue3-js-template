@@ -14,8 +14,9 @@
             HelloWorld
         },
         setup(props, context) {
-            let { ctx } = getCurrentInstance()
-            ctx.$http.get('userinfo', {name: 'asdasd'}).then(res => {
+            let { proxy } = getCurrentInstance()
+            console.log('proxy::::::::::::::::', proxy)
+            proxy.$http.get('userinfo', {name: 'asdasd'}).then(res => {
                 console.log('res::::::::::::::::', res)
             })
 
