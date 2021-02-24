@@ -9,10 +9,10 @@ import server from './config'
 
 const http = {
     get(url, params){
-        return server.get(url, {params: params})
+        return server.get(url, {params: params}).then(res => res.data)
     },
     post(url, params) {
-        return server.post(url, params)
+        return server.post(url, params).then(res => res.data)
     }
 }
 

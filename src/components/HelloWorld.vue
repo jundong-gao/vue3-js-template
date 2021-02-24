@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import {useStore} from 'vuex'
-    import {ref} from 'vue'
+    import { useStore } from 'vuex'
+    import { ref } from 'vue'
     export default {
         props: ['msg'],
         setup(props, context) {

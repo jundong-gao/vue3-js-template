@@ -8,7 +8,7 @@
 import axios from 'axios'
 
 let server = axios.create({
-    baseURL: 'http://xxxx.com/',
+    baseURL: 'https://mock.gaojundong.com/',
     timeout: 10000
 })
 
