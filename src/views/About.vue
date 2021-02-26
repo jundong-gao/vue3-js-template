@@ -5,10 +5,23 @@
 </template>
 
 <script>
+    import { watch, ref, watchEffect, isRef, computed } from 'vue'
     import useCalc from '@hooks/useCalc'
     export default {
         setup() {
             let { add, count } = useCalc()
+            let a = ref('aaa')
+
+
+            watch(count, (newVal, oldVal) => {
+                console.log('newVal,oldVal::::::::::::::::', newVal,oldVal)
+            })
+
+            watchEffect(() => {
+                console.log('watchEffect count::::::::::::::::', count.value)
+            })
+
+
             return {
                 add,
                 count
