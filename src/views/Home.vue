@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         {{test_name}}
-        <HelloWorld msg="Vue3.0 template"/>
+        <HelloWorld msg="Vue3.0 template" @change="childChange"/>
     </div>
 </template>
 
@@ -42,8 +42,13 @@
             }, 1000)
 
 
+            let childChange = function(e) {
+                console.log('父组件打印::::::::::::::::', e)
+            }
+
             return {
-                test_name
+                test_name,
+                childChange
             }
 
         }
